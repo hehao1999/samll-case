@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w {
+    margin: 150px auto;
+    width: 80%;
+}
+
+.btn-left {
+    position: absolute;
+    display: none;
+    top: 45%;
+    left: 3%;
+    width: 15px;
+    height: 15px;
+    padding-left: 2px;
+    line-height: 15px;
+    font-size: 10px;
+    color: #fbfbfb;
+    background-color: rgb(30, 30, 30, .2);
+    border-radius: 50% 50% 50% 50%;
+    z-index: 1;
+}
+
+.btn-right {
+    position: absolute;
+    display: none;
+    top: 45%;
+    left: 91%;
+    width: 15px;
+    height: 15px;
+    padding-left: 4px;
+    line-height: 15px;
+    font-size: 10px;
+    color: #fbfbfb;
+    background-color: rgb(30, 30, 30, .2);
+    border-radius: 50% 50% 50% 50%;
+    z-index: 1;
+}
+
+.focus {
+    position: relative;
+    margin: 0 auto;
+    width: 258px;
+    height: 250px;
+    /*这里必须设置宽度,否则使用定位会塌陷*/
+    overflow: hidden;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+}
+
+.focus ul {
+    position: absolute;
+    width: 4000px;
+}
+
+ul li {
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+ol {
+    position: absolute;
+    bottom: 10px;
+    left: 34px;
+    padding: 1px 8px;
+    border: 1px solid pink;
+    border-radius: 5px 5px 5px 5px;
+}
+
+ol li {
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% 50%;
+    background-color: pink;
+}
+
+ol .current {
+    background-color: blueviolet;
+}
